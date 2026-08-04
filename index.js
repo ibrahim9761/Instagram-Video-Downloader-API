@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const cors = require('cors');
+app.use(cors());
 const snapsave = require("./snapsave-downloader/src/index");
 const port = 3000;
 
